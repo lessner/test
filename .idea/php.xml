@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/reportes/vendor/kartik-v/yii2-mpdf" />
+      <path value="$PROJECT_DIR$/reportes/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/reportes/vendor/mpdf/mpdf" />
+      <path value="$PROJECT_DIR$/reportes/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/reportes/vendor/composer" />
+      <path value="$PROJECT_DIR$/reportes/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/reportes/vendor/setasign/fpdi" />
+    </include_path>
+  </component>
+</project>

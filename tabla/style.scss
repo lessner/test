@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+.c-list-app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  border: 5px solid orange;
+}
+
+.c-list-app__headers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: none;
+}
+
+.c-list-app__header {
+  flex: 1 0 0;
+  border: 5px solid green;
+}
+
+.c-list-app__header--shrink {
+  flex: none;
+}
+
+.c-list-app__lists {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: row;
+}
+
+.c-list-app__list {
+  flex: 1 0 0;
+  border: 5px solid cornflowerblue;
+}
+
+.c-list-app__list--shrink {
+  flex: none;
+}
+
+.c-scroll-table {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 400px;
+  background-color: white;
+}
+
+.c-scroll-table__header {
+  width: 100%;
+  flex-shrink: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.c-scroll-table__header td {
+  visibility: hidden;
+  height: 0 !important;
+  line-height: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  overflow: hidden;
+}
+
+.c-scroll-table__body {
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow-y: scroll;
+}
+
+.c-scroll-table__body th {
+  visibility: hidden;
+  height: 0 !important;
+  line-height: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  overflow: hidden;
+}
+
+.c-scroll-table__table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+.c-scroll-table__table th {
+  height: 56px;
+  padding-left: 56px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 56px;
+  white-space: nowrap;
+  background: white;
+  color: #757575;
+  text-align: left;
+}
+
+.c-scroll-table__table th:first-child {
+  padding-left: 24px;
+}
+
+.c-scroll-table__table th:last-child {
+  padding-right: 24px;
+}
+
+.c-scroll-table__table td {
+  height: 48px;
+  font-size: 13px;
+  color: #212121;
+  padding: 0 0 0 56px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.c-scroll-table__table td:first-child {
+  padding-left: 24px;
+}
+
+.c-scroll-table__table td:last-child {
+  padding-right: 24px;
+}
+
+.c-scroll-tables {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  height: 300px;
+  overflow-y: auto;
+  position: relative;
+  margin: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(0, 0, 0, 0.137255) 0px 1px 1px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 1px -1px;
+}
+
+.c-scroll-tables__table {
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.c-scroll-tables__table:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -11px;
+  height: 100%;
+  width: 11px;
+  /* background-color: #dddddd; */
+  z-index: 1000;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.c-scroll-tables__table:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -11px;
+  height: 100%;
+  width: 11px;
+  /* background-color: #dddddd; */
+  z-index: 1000;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.c-scroll-tables__table:first-child, .c-scroll-tables__table:last-child {
+  flex-shrink: 0;
+}
+
+.c-scroll-tables__table:first-child:after, .c-scroll-tables__table:first-child:before, .c-scroll-tables__table:last-child:after, .c-scroll-tables__table:last-child:before {
+  display: none;
+}
+
+.c-scroll-tables__table .c-scroll-table {
+  height: auto;
+}
+
+.c-scroll-tables__table .c-scroll-table .c-scroll-table__body {
+  overflow: hidden;
+  height: auto;
+  width: auto;
+}
+
+.c-scroll-tables__table .c-scroll-table .c-scroll-table__header {
+  width: auto;
+  transform-style: flat;
+  z-index: 900;
+}
+
+.c-scroll-tables__table .c-scroll-table .c-scroll-table__table {
+  table-layout: fixed;
+  width: auto;
+}
+
+.scrollbar {
+  overflow-x: auto;
+}
+
+.scrollbar__track {
+  height: 2px;
+}
+
+/*# sourceMappingURL=main.css.map */

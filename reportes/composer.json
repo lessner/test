@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mpdf/mpdf": "^7.1",
+        "kartik-v/yii2-mpdf": "*"
+    }
+}
